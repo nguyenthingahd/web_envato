@@ -9,13 +9,72 @@ document.body.onload = function () {
   document.querySelector(".tab-content>div:first-child").style.display =
     "block";
   var tabs = document.querySelectorAll(".tab-menu>a");
-  for (var i = 0; i < tabs.length; i++) {
-    tabs[i].onclick = function () {
-      hideAll();
-      var content = document.querySelector(".tab-content>.content-" + this.id);
-      content.style.display = "block";
-    };
-  }
+
+  var tab01 = document.getElementById("tab_01");
+  var tab02 = document.getElementById("tab_02");
+  var tab03 = document.getElementById("tab_03");
+  var tab04 = document.getElementById("tab_04");
+
+  tab01.onclick = function () {
+    tab01.classList.add("active");
+    hideAll();
+    var content = document.querySelector(".tab-content>.content-" + this.id);
+    content.style.display = "block";
+    if (tab02.classList.contains("active")) {
+      tab02.classList.remove("active");
+    }
+    if (tab03.classList.contains("active")) {
+      tab03.classList.remove("active");
+    }
+    if (tab04.classList.contains("active")) {
+      tab04.classList.remove("active");
+    }
+  };
+  tab02.onclick = function () {
+    tab02.classList.add("active");
+    hideAll();
+    var content = document.querySelector(".tab-content>.content-" + this.id);
+    content.style.display = "block";
+    if (tab01.classList.contains("active")) {
+      tab01.classList.remove("active");
+    }
+    if (tab03.classList.contains("active")) {
+      tab03.classList.remove("active");
+    }
+    if (tab04.classList.contains("active")) {
+      tab04.classList.remove("active");
+    }
+  };
+  tab03.onclick = function () {
+    tab03.classList.add("active");
+    hideAll();
+    var content = document.querySelector(".tab-content>.content-" + this.id);
+    content.style.display = "block";
+    if (tab01.classList.contains("active")) {
+      tab01.classList.remove("active");
+    }
+    if (tab02.classList.contains("active")) {
+      tab02.classList.remove("active");
+    }
+    if (tab04.classList.contains("active")) {
+      tab04.classList.remove("active");
+    }
+  };
+  tab04.onclick = function () {
+    tab04.classList.add("active");
+    hideAll();
+    var content = document.querySelector(".tab-content>.content-" + this.id);
+    content.style.display = "block";
+    if (tab01.classList.contains("active")) {
+      tab01.classList.remove("active");
+    }
+    if (tab02.classList.contains("active")) {
+      tab02.classList.remove("active");
+    }
+    if (tab03.classList.contains("active")) {
+      tab03.classList.remove("active");
+    }
+  };
 };
 
 const allHoverImages = document.querySelectorAll(".hover-container div img");
