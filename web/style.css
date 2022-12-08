@@ -113,7 +113,7 @@ p {
   right: 0;
 }
 .ps-product__status {
-  padding-top: 20px;
+  padding-top: 30px;
 }
 .ps-product__status h5{
   display: flex;
@@ -190,7 +190,7 @@ h5 {
 }
 
 .ps-product__shopping {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 .ps-product__shopping form{
   display: flex;
@@ -244,12 +244,7 @@ padding: 20px 0px;
   .product-div-left .hover-container img{
     width: 20px;
   }
-  .product-div-right{
-      text-align: center;
-  }
 }
-
-
 
 
 
@@ -369,8 +364,6 @@ padding: 0px 10% ;
   padding: 8px 30px 7px;
   line-height: 25px;
   font-size: 14px;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
   cursor: pointer;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -401,8 +394,6 @@ padding: 0px 10% ;
   border: 1px solid #999;
   padding: 10px 20px;
   color: #fff;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px;
 }
 textarea.form-control {
   height: auto;
@@ -574,7 +565,7 @@ input.form-control:focus {
   background-color: #cd9b33;
   color: #fff;
   width: 260px;
-  padding: 9px 60px 7px;
+  padding: 10px 0;
   line-height: 25px;
   font-size: 14px;
   text-transform: uppercase;
@@ -589,7 +580,6 @@ input.form-control:focus {
   .ps-btn {
     padding: 10px 0;
     min-width: 200px;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -733,7 +723,6 @@ input.form-control:focus {
   .product-div .product-div-right {
     width: 100%;
     padding: 0 30px;
-    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -753,3 +742,6 @@ input.form-control:focus {
     right: 30%;
   }
 }
+
+
+
