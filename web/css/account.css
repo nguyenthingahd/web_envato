@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.form {
+    padding-top: 30px;
+    margin: auto; 
+}
+
+.account {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.lable-account {
+    display: flex;
+    justify-content: center;
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.form-login__heading-login {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form-login__heading-login span {
+    color: #cd9b33;
+    padding: 5px 50px;
+    border-bottom: 2px solid #cd9b33;
+    font-size: 20px;
+}
+
+.form-login__heading-register {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.form-login__heading-register span {
+    padding: 10px 50px;
+    color: #646464;
+    font-size: 20px;
+}
+
+.form-login__login-form {
+    width: 350px;
+}
+
+.form-login__username {
+    padding-top: 30px;
+}
+
+.form-login__username p {
+    font-size: 20px;
+    color: #555555;
+    padding: 12px 0;
+}
+
+.form-login__username input {
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    outline-color: #ccc;
+    outline-width: 1px;
+    border-radius: 4px;
+}
+
+.form-login__password {
+    padding-top: 10px;
+}
+
+.form-login__password p {
+    font-size:20px;
+    color: #555555;
+    padding: 12px 0;
+}
+
+.form-login__password input {
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    outline-color: #ccc;
+    outline-width: 1px;
+    border-radius: 4px;
+}
+
+
+.form-login__forget-password {
+    padding: 16px 0;
+    display: flex;
+    justify-content: start;
+}
+
+.form-login__forget-password a {
+    text-decoration: none;
+}
+
+.form-login__forget-password span {
+    color: #cd9b33;
+    font-size: 19px;
+}
+
+.form-login__btn-login {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.form-login__btn-login button {
+    color: #636363;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 85px;
+    font-weight: 700;
+    font-size: 21px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.form-login__btn-login button:hover{
+    background-color: #cd9b33;
+}
+.form-register {
+    padding: 0 8px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.form-register__heading-login {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.form-register__heading-login span {
+    padding: 5px 50px;
+    font-size: 20px;
+}
+
+.form-register__heading-login:hover span {
+    border-bottom: 2px solid #cd9b33;
+}
+
+.form-register__heading-register span {
+    color: #cd9b33;
+    padding: 5px 50px;
+    border-bottom: 2px solid #cd9b33;
+    font-size: 20px;
+}
+
+.form-register__heading-register {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.form-register__heading-register span {
+    color: #646464;
+    font-size: 20px;
+}
+
+.form-register__register-form {
+    width: 350px;
+}
+
+.form-register__username {
+    padding-top: 30px;
+}
+
+.form-register__username p {
+    font-size: 20px;
+    color: #555555;
+    padding: 12px 0;
+}
+
+.form-register__username input {
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    outline-color: #ccc;
+    outline-width: 1px;
+    border-radius: 4px;
+}
+
+
+.form-register__password {
+    padding-top: 10px;
+}
+
+.form-register__password p {
+    font-size: 20px;
+    color: #555555;
+    padding: 12px 0;
+}
+
+.form-register__password input {
+    padding: 10px 14px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    background-color: var(--while-color);
+    outline-color: #2e77c1;
+    outline-width: 1px;
+    border-radius: 4px;
+}
+
+.form-register__btn-register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.form-register__btn-register button {
+    color: #636363;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 85px;
+    font-weight: 700;
+    font-size: 21px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.form-register__btn-register button:hover{
+    background-color: #cd9b33;
+}
+@media only screen and (max-width: 900px) {
+    .form {
+        width: 100%;
+    }
+
+    .account {
+        max-width: 750px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
